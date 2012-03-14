@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import ca.pfv.spmf.general.datastructures.triangularmatrix.TriangularMatrix;
+import weka.spmf.general.datastructures.triangularmatrix.TriangularMatrix;
 
 /**
  * The CMRules algorithm for mining sequential rules common to several sequences.

@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.AbstractAlgoClustering;
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
+import weka.spmf.kmeans_for_seq_pattern_mining.AbstractAlgoClustering;
+import weka.spmf.kmeans_for_seq_pattern_mining.Cluster;
 
 /**
  * This is the Fournier-Viger algorithm (2008) that is based on Hirate et Yamana (2006).

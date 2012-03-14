@@ -1,6 +1,6 @@
 package weka.spmf.sequentialpattern;
 
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
+import weka.spmf.kmeans_for_seq_pattern_mining.Cluster;
 
 /**
  * This class is an Item that can have an integer value.

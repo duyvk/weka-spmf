@@ -7,15 +7,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import ca.pfv.spmf.sequentialpatterns.AbstractAlgoPrefixSpan;
-import ca.pfv.spmf.sequentialpatterns.Item;
-import ca.pfv.spmf.sequentialpatterns.Itemset;
-import ca.pfv.spmf.sequentialpatterns.Pair;
-import ca.pfv.spmf.sequentialpatterns.PseudoSequence;
-import ca.pfv.spmf.sequentialpatterns.PseudoSequenceDatabase;
-import ca.pfv.spmf.sequentialpatterns.Sequence;
-import ca.pfv.spmf.sequentialpatterns.SequenceDatabase;
-import ca.pfv.spmf.sequentialpatterns.Sequences;
+import weka.spmf.sequentialpattern.AbstractAlgoPrefixSpan;
+import weka.spmf.sequentialpattern.Item;
+import weka.spmf.sequentialpattern.Itemset;
+import weka.spmf.sequentialpattern.Pair;
+import weka.spmf.sequentialpattern.PseudoSequence;
+import weka.spmf.sequentialpattern.PseudoSequenceDatabase;
+import weka.spmf.sequentialpattern.Sequence;
+import weka.spmf.sequentialpattern.SequenceDatabase;
+import weka.spmf.sequentialpattern.Sequences;
 
 /**
  * This is an implementation of the PrefixSpan algorithm by Pei et al. 2001

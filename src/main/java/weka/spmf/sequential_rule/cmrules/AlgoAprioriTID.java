@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import ca.pfv.spmf.general.datastructures.triangularmatrix.TriangularMatrix;
+import weka.spmf.general.datastructures.triangularmatrix.TriangularMatrix;
 
 /**
  * This is an implementation of the Apriori algorithm as described by :

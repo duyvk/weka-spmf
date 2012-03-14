@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
+import weka.spmf.kmeans_for_seq_pattern_mining.Cluster;
 
 /**
  * Implementation of a sequence database.

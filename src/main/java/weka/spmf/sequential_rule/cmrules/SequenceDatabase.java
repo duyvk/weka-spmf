@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
+import weka.spmf.kmeans_for_seq_pattern_mining.Cluster;
 /**
  * Implementation of a sequence database. Each sequence should have a unique id.
  * See examples in /test/ directory for the format of input files.
