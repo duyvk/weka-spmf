@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry excluding="weka/spmf/sequential_rules/cmdeogun/|weka/spmf/sequential_rules/cmrules/|weka/spmf/sequential_rules/rulegen/|weka/spmf/sequential_rules/rulegrowth/|weka/spmf/sequential_rules/topseqrules/|weka/spmf/sequential_rules/trulegrowth/|weka/spmf/sequentialpatterns/|weka/spmf/sequentialpatterns/BIDEPlus_saveToFile/|weka/spmf/sequentialpatterns/prefixspan/|weka/spmf/sequentialpatterns/prefixspan_for_use_with_multidimensional_pattern_mining/|weka/spmf/sequentialpatterns/prefixspan_saveToFile/|weka/spmf/sequentialpatterns/prefixspan_with_strings/|weka/spmf/sequentialpatterns/spam_saveToFile/|weka/spmf/sequentialpatterns/|weka/spmf/sequential_rules/|weka/spmf/sequential_rules/|weka/spmf/sequentialpatterns/" kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="lib" path="lib/java-cup.jar"/>
 	<classpathentry kind="lib" path="lib/JFlex.jar"/>
