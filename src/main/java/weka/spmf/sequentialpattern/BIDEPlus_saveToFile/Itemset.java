@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.BIDEPlus_saveToFile;
+package weka.spmf.sequentialpattern.BIDEPlus_saveToFile;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +36,7 @@ public class Itemset{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer ();
 		for(Integer attribute : items){

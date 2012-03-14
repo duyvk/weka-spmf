@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmrules;
+package weka.spmf.sequential_rule.cmrules;
 
 import java.util.ArrayList;
 import java.util.List;

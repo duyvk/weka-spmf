@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_saveToFile;
+package weka.spmf.sequentialpattern.prefixspan_saveToFile;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +37,7 @@ public class Itemset{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer ();
 		for(Integer attribute : items){

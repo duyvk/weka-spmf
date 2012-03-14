@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.spam_saveToFile;
+package weka.spmf.sequentialpattern.spam_saveToFile;
 
 import java.util.BitSet;
 /**
@@ -45,6 +45,7 @@ public class Bitmap {
 		return support;
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer buffer = new StringBuffer();
 		for (int bit = bitmap.nextSetBit(0); bit >= 0; bit = bitmap.nextSetBit(bit+1)) {

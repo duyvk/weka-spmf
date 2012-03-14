@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.spam_saveToFile;
+package weka.spmf.sequentialpattern.spam_saveToFile;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -110,7 +110,7 @@ public class AlgoSPAM{
 		List<Integer> frequentItems = new ArrayList<Integer>();
 		Iterator<Entry<Integer, Bitmap>> iter = verticalDB.entrySet().iterator();
 		while (iter.hasNext()) {
-			Map.Entry<Integer, Bitmap> entry = (Map.Entry<Integer, Bitmap>) iter.next();
+			Map.Entry<Integer, Bitmap> entry = iter.next();
 			if(entry.getValue().getSupport() < minsup){
 //				System.out.println(entry.getKey() + " has not the support" + entry.getValue().toString());
 				iter.remove();
@@ -217,7 +217,7 @@ public class AlgoSPAM{
 	
 
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}

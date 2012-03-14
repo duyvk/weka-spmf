@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_for_use_with_multidimensional_pattern_mining;
+package weka.spmf.sequentialpattern.prefixspan_for_use_with_multidimensional_pattern_mining;
 
 import java.util.HashMap;
 import java.util.HashSet;

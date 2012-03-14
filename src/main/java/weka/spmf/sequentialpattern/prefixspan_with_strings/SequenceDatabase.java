@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_with_strings;
+package weka.spmf.sequentialpattern.prefixspan_with_strings;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -79,6 +79,7 @@ public class SequenceDatabase{
 		}
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer();
 		for(Sequence sequence : sequences){ // for each transaction

@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmrules;
+package weka.spmf.sequential_rule.cmrules;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -152,6 +152,7 @@ public class SequenceDatabase {
 	}
 	
 
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer();
 		for (Sequence sequence : sequences) { // pour chaque objet

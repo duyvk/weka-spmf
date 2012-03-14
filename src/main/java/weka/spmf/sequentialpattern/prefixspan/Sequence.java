@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan;
+package weka.spmf.sequentialpattern.prefixspan;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -54,6 +54,7 @@ public class Sequence{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer("");
 		for(Itemset itemset : itemsets){

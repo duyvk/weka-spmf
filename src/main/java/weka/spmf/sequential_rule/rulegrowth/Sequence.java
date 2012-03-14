@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.rulegrowth;
+package weka.spmf.sequential_rule.rulegrowth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +28,7 @@ public class Sequence{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer("");
 		for(Itemset itemset : itemsets){

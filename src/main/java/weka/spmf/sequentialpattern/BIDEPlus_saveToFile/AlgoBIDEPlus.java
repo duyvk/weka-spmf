@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.BIDEPlus_saveToFile;
+package weka.spmf.sequentialpattern.BIDEPlus_saveToFile;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -434,7 +434,7 @@ public class AlgoBIDEPlus {
 	}
 	
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}

@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.topseqrules;
+package weka.spmf.sequential_rule.topseqrules;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -155,6 +155,7 @@ public class SequenceDatabase {
 ////		System.out.println("mean itemset count" + meansize);
 //	}
 
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer();
 		for (int i=0 ; i < sequences.size(); i++) { // pour chaque objet

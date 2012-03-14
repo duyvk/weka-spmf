@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.spam_saveToFile;
+package weka.spmf.sequentialpattern.spam_saveToFile;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +35,7 @@ public class Itemset{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer ();
 		for(Integer attribute : items){

@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.BIDEPlus_saveToFile;
+package weka.spmf.sequentialpattern.BIDEPlus_saveToFile;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -81,6 +81,7 @@ public class SequenceDatabase{
 		}
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer();
 		for(Sequence sequence : sequences){ // for each transaction

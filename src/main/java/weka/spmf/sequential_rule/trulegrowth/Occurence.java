@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.trulegrowth;
+package weka.spmf.sequential_rule.trulegrowth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +24,12 @@ public class Occurence {
 		return occurences.get(occurences.size()-1);
 	}
 	
+	@Override
 	public boolean equals(Object obj) {
 		return ((Occurence)obj).transactionID == transactionID;
 	}
 
+	@Override
 	public int hashCode() {
 		return transactionID;
 	}

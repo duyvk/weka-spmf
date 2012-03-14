@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.rulegrowth;
+package weka.spmf.sequential_rule.rulegrowth;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +33,7 @@ public class Itemset{
 		return items.get(index);
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer ();
 		for(Integer attribute : items){

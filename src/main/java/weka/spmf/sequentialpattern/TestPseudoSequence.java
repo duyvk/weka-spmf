@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 
 public class TestPseudoSequence {

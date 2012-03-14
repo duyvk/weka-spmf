@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmdeogun;
+package weka.spmf.sequential_rule.cmdeogun;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;

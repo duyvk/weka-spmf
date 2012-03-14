@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmrules;
+package weka.spmf.sequential_rule.cmrules;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -74,6 +74,7 @@ public class Itemset{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer ();
 		for(Integer attribute : items){

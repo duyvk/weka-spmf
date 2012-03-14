@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan;
+package weka.spmf.sequentialpattern.prefixspan;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -27,6 +27,7 @@ class Pair{
 		this.item = item;
 	}
 	
+	@Override
 	public boolean equals(Object object){
 		Pair paire = (Pair) object;
 		if((paire.postfix == this.postfix) 
@@ -36,6 +37,7 @@ class Pair{
 		return false;
 	}
 	
+	@Override
 	public int hashCode()
 	{// Ex: 127333,P,X,1  127333,N,Z,2
 		StringBuffer r = new StringBuffer();

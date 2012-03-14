@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_with_strings;
+package weka.spmf.sequentialpattern.prefixspan_with_strings;
 
 import java.util.ArrayList;
 import java.util.List;

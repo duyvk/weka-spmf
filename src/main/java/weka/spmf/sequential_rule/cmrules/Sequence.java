@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmrules;
+package weka.spmf.sequential_rule.cmrules;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +31,7 @@ public class Sequence{
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer("");
 		for(Itemset itemset : itemsets){

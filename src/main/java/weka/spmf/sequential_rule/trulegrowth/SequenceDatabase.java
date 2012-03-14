@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.trulegrowth;
+package weka.spmf.sequential_rule.trulegrowth;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -133,6 +133,7 @@ public class SequenceDatabase {
 		System.out.println("mean size" + meansize);
 	}
 
+	@Override
 	public String toString() {
 		StringBuffer r = new StringBuffer();
 		for (Sequence sequence : sequences) { // pour chaque objet

@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_saveToFile;
+package weka.spmf.sequentialpattern.prefixspan_saveToFile;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -282,7 +282,7 @@ public class AlgoPrefixSpan{
 	}
 	
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}

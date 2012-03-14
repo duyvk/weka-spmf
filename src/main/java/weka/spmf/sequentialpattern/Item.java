@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 
 public class Item{
@@ -13,10 +13,12 @@ public class Item{
 		return id;
 	}
 
+	@Override
 	public String toString(){
 		return "" + getId();
 	}
 	
+	@Override
 	public boolean equals(Object object){
 		Item item = (Item) object;
 		if((item.getId() == this.getId())){
@@ -25,6 +27,7 @@ public class Item{
 		return false;
 	}
 	
+	@Override
 	public int hashCode()
 	{
 		String string = ""+getId(); // This could be improved.

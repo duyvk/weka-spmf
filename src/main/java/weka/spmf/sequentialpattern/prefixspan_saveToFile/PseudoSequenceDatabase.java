@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_saveToFile;
+package weka.spmf.sequentialpattern.prefixspan_saveToFile;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -24,6 +24,7 @@ public class PseudoSequenceDatabase {
 		System.out.println(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer("============  CONTEXTE ==========");
 		for(PseudoSequence sequence : pseudoSequences){ // pour chaque objet

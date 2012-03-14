@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -138,6 +138,7 @@ public class PseudoSequence {
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer();
 		for(int i=0; i < size(); i++){

@@ -1,13 +1,13 @@
-package ca.pfv.spmf.sequential_rules.rulegen;
+package weka.spmf.sequential_rule.rulegen;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import ca.pfv.spmf.sequentialpatterns.prefixspan.AlgoPrefixSpan;
-import ca.pfv.spmf.sequentialpatterns.prefixspan.Sequence;
-import ca.pfv.spmf.sequentialpatterns.prefixspan.SequenceDatabase;
-import ca.pfv.spmf.sequentialpatterns.prefixspan.Sequences;
+import weka.spmf.sequentialpattern.prefixspan.AlgoPrefixSpan;
+import weka.spmf.sequentialpattern.prefixspan.Sequence;
+import weka.spmf.sequentialpattern.prefixspan.SequenceDatabase;
+import weka.spmf.sequentialpattern.prefixspan.Sequences;
 
 /**
  * This is an implementation of the RuleGen algorithm proposed by Zaki et al. in the article:
@@ -36,7 +36,7 @@ public class AlgoRuleGen {
 	}
 	
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}

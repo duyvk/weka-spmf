@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.rulegrowth;
+package weka.spmf.sequential_rule.rulegrowth;
  
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -37,7 +37,7 @@ public class AlgoRULEGROWTH {
 	}
 
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}

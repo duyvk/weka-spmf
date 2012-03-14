@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.topseqrules;
+package weka.spmf.sequential_rule.topseqrules;
  
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import ca.pfv.spmf.general.datastructures.redblacktree.RedBlackTree;
+import weka.spmf.general.datastructures.redblacktree.RedBlackTree;
 
 /**
  * Top-K-SeqRules: a modified version of RuleGrowth for mining the top-k sequential rules.
@@ -42,7 +42,7 @@ public class AlgoTopSeqRules {
 	}
 
 	private void checkMemory() {
-		double currentMemory = ( (double)((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- ((double)((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
+		double currentMemory = ( ((double)(Runtime.getRuntime().totalMemory()/1024)/1024))- (((double)(Runtime.getRuntime().freeMemory()/1024)/1024));
 		if(currentMemory > maxMemory){
 			maxMemory = currentMemory;
 		}
@@ -86,7 +86,7 @@ main1:	for(int itemI=database.minItem; itemI<= database.maxItem; itemI++){
 			}
 			
 main2:		for(int itemJ=itemI+1; itemJ <= database.maxItem; itemJ++){
-				Map<Integer, Short> occurencesJfirst = (Map<Integer, Short>) arrayMapItemCountFirst[itemJ];
+				Map<Integer, Short> occurencesJfirst = arrayMapItemCountFirst[itemJ];
 				if(occurencesJfirst == null){
 					continue main2;
 				}
@@ -100,7 +100,7 @@ main2:		for(int itemJ=itemI+1; itemJ <= database.maxItem; itemJ++){
 				Set<Integer> tidsIJ = new HashSet<Integer>();
 				Set<Integer> tidsJI = new HashSet<Integer>();
 
-				Map<Integer, Short> occurencesJlast = (Map<Integer, Short>) arrayMapItemCountLast[itemJ];
+				Map<Integer, Short> occurencesJlast = arrayMapItemCountLast[itemJ];
 				Map<Integer, Short> occurencesIlast = arrayMapItemCountLast[itemI];
 
 				if(tidsI.size() > tidsJ.size()){ 
@@ -472,7 +472,7 @@ itemLoop:	for(int k=0; k < end; k++){
 		System.out.println("Max candidates: " + maxCandidateCount);
 		System.out.println("Sequential rules count: " + kRules.size());
 		System.out.println("-");
-		System.out.println("Total time: " + (((double)(timeEnd - timeStart))/1000d) + " s");
+		System.out.println("Total time: " + (((timeEnd - timeStart))/1000d) + " s");
 		System.out.println("Max memory: " + maxMemory);
 		System.out.println("Minsup relative: " + minsuppRelative);
 		System.out.println("==========================================");
@@ -486,7 +486,7 @@ itemLoop:	for(int k=0; k < end; k++){
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path)); 
 		Iterator<Rule> iter = kRules.iterator();
 		while (iter.hasNext()) {
-			Rule rule = (Rule) iter.next();
+			Rule rule = iter.next();
 			StringBuffer buffer = new StringBuffer();
 			buffer.append(rule.toString());
 			// write separator

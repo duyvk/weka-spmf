@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmdeogun;
+package weka.spmf.sequential_rule.cmdeogun;
 
 /**
  * This class is for representing a sequential rule.

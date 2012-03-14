@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.BIDEPlus_saveToFile;
+package weka.spmf.sequentialpattern.BIDEPlus_saveToFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,6 +117,7 @@ public class PseudoSequence {
 		System.out.print(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer();
 		for(int i=0; i < size(); i++){

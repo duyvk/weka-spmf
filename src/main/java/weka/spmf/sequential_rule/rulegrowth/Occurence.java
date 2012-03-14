@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.rulegrowth;
+package weka.spmf.sequential_rule.rulegrowth;
 
 
 public class Occurence {

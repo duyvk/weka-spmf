@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.prefixspan_saveToFile;
+package weka.spmf.sequentialpattern.prefixspan_saveToFile;
 
 
 

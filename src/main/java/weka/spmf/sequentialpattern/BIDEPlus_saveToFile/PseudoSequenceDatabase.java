@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns.BIDEPlus_saveToFile;
+package weka.spmf.sequentialpattern.BIDEPlus_saveToFile;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -26,6 +26,7 @@ public class PseudoSequenceDatabase {
 		System.out.println(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer r = new StringBuffer("============  CONTEXTE ==========");
 		for(PseudoSequence sequence : pseudoSequences){ // pour chaque objet

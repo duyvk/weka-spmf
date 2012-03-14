@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,10 +36,12 @@ public class AlgoBIDEPlus extends AbstractAlgoPrefixSpan {
 		this.minsup = minsup;
 	}
 
+	@Override
 	public double getMinSupp() {
 		return minsup;
 	}
 
+	@Override
 	public Sequences runAlgorithm(SequenceDatabase database) {
 		patterns = new Sequences("FREQUENT CLOSED SEQUENTIAL PATTERNS");
 		this.minsuppRelative = (int) Math.ceil(minsup* database.size());

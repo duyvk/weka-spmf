@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmrules;
+package weka.spmf.sequential_rule.cmrules;
 
 /**
  * This class is for representing a sequential rule.
@@ -55,6 +55,7 @@ public class Rule {
 		System.out.println(toString());
 	}
 	
+	@Override
 	public String toString(){
 		return itemset1.toString() +  " ==> " + itemset2.toString();
 	}

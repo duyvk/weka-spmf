@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
 
@@ -46,6 +46,7 @@ public class ItemValued extends Item{
 		return value;
 	}
 
+	@Override
 	public String toString(){
 		StringBuffer temp = new StringBuffer();
 		temp.append(getId());

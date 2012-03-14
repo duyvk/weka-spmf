@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.topseqrules;
+package weka.spmf.sequential_rule.topseqrules;
 
 import java.util.Map;
 import java.util.Set;
@@ -57,6 +57,7 @@ public class Rule implements Comparable<Rule>{
 		System.out.println(toString());
 	}
 	
+	@Override
 	public String toString(){
 		StringBuffer buffer = new StringBuffer();
 		for(int i=0; i< itemset1.length; i++){
@@ -79,6 +80,7 @@ public class Rule implements Comparable<Rule>{
 		return confidence;
 	}
 	
+	@Override
 	public int compareTo(Rule o) {
 		if(o == this){
 			return 0;

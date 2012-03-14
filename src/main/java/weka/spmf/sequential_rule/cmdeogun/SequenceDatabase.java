@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequential_rules.cmdeogun;
+package weka.spmf.sequential_rule.cmdeogun;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import ca.pfv.spmf.clustering.kmeans_for_seq_pattern_mining.Cluster;
+import weka.spmf.kmeans_for_seq_pattern_mining.Cluster;
 
 /**
  * Implementation of a sequence database. Each sequence should have a unique id.

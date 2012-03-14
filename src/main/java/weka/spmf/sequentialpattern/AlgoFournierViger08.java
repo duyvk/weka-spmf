@@ -1,4 +1,4 @@
-package ca.pfv.spmf.sequentialpatterns;
+package weka.spmf.sequentialpattern;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,6 +77,7 @@ public class AlgoFournierViger08 extends AbstractAlgoPrefixSpan{
 		this.enableBackscanPruning = enableBackscanPruning;
 	}
 	
+	@Override
 	public Sequences runAlgorithm(SequenceDatabase contexte) {
 		patterns = new Sequences("FREQUENT SEQUENCES WITH TIME + CLUSTERING");
 		this.minsuppRelative = (int) Math.ceil(minsupp * contexte.size());
