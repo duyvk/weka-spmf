@@ -484,34 +484,7 @@ implements CapabilitiesFilterChangeListener, ExplorerPanel, LogHandler{
 			System.err.println(e.getMessage());
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 // required method	
 	
 	@Override

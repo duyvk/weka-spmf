@@ -237,7 +237,10 @@ public class GeneralizedSequentialPatterns
     String	tmpStr;
   
     resetOptions();
-
+    
+    for(int i = 0;i<options.length;i++)
+    	System.out.println("GSP:options: "+options[i]);
+    
     setDebug(Utils.getFlag('D', options));
     
     tmpStr = Utils.getOption('S', options);
@@ -268,7 +271,7 @@ public class GeneralizedSequentialPatterns
     
     result.add("-S");
     result.add("" + getMinSupport());
-
+   
     result.add("-I");
     result.add("" + getDataSeqID());
     
@@ -277,7 +280,8 @@ public class GeneralizedSequentialPatterns
 
     return result.toArray(new String[result.size()]);
   }
-
+  
+ 
   /**
    * Resets the algorithm's options to the default values.
    */
