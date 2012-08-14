@@ -260,8 +260,9 @@ public class Element
 
     for (int i=0; i < m_Events.length; i++) {
       if (m_Events[i] > -1) {			
-	result.append(dataSet.attribute(i).value(m_Events[i]) + ",");
-	addedValues++;
+	//result.append(dataSet.attribute(i).value(m_Events[i]) + ",");
+	result.append(m_Events[i]+",");
+    	  addedValues++;
       }
     }
     result.deleteCharAt(result.length()-1);

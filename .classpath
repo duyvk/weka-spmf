@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="E:/My Documents/Programming/jmathplot.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/Desktop/issue_test/weka/opencsv-2.3.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
